@@ -6,8 +6,6 @@ vim
 neofetch
 wine
 terminator
-
-
 # Web server & backend tools
 openssh-server
 apache2

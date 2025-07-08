@@ -1,4 +1,4 @@
-sublime-text
+sublime-text --classic
 teams-for-linux
 telegram-desktop
 thunderbird
@@ -8,5 +8,4 @@ zoom-client
 cursor
 dbeaver-ce
 bitwarden
-code
-flameshot
+code --classic
