@@ -5,3 +5,15 @@ zsh
 vim
 neofetch
 wine
+terminator
+
+
+# Web server & backend tools
+openssh-server
+apache2
+php
+libapache2-mod-php
+nginx
+php-fpm
+php-mysql
+mysql-server

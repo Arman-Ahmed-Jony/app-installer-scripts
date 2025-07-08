@@ -78,5 +78,16 @@ if [[ -d "$DEB_DIR" ]]; then
   done
 fi
 
+# ---- Install NVM (Node Version Manager) ----
+if [[ ! -d "$HOME/.nvm" ]]; then
+  echo "⬢ Installing NVM..."
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+  export NVM_DIR="$HOME/.nvm"
+  source "$NVM_DIR/nvm.sh"
+  nvm install --lts
+else
+  echo "✅ NVM already installed."
+fi
+
 echo "✅ All done. Applications are installed."
 

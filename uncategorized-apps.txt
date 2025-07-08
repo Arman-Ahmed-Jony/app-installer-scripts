@@ -1,0 +1,4 @@
+virtualbox
+docker
+edge
+google-chrome
