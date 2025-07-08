@@ -1,0 +1,12 @@
+sublime-text
+teams-for-linux
+telegram-desktop
+thunderbird
+vlc
+whatsapp-linux-app
+zoom-client
+cursor
+dbeaver-ce
+bitwarden
+code
+flameshot

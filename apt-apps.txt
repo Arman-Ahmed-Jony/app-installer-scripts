@@ -1,0 +1,7 @@
+# APT Apps
+git
+curl
+zsh
+vim
+neofetch
+wine
