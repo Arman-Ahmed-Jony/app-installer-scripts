@@ -28,6 +28,19 @@ if [[ -f "$APT_LIST" ]]; then
 fi
 
 # --------------------------------------------
+# Ensure SNAP is installed
+# --------------------------------------------
+if ! command -v snap &>/dev/null; then
+  echo "🛠️  Snap is not installed. Installing snapd..."
+  sudo apt update && sudo apt install -y snapd
+  sudo systemctl enable --now snapd.socket
+  sudo snap install core
+  sudo snap refresh core
+  sudo ln -s /var/lib/snapd/snap /snap
+  echo "✅ Snap installed."
+fi
+
+# --------------------------------------------
 # 2. SNAP INSTALL
 # --------------------------------------------
 if command -v snap &>/dev/null && [[ -f "$SNAP_LIST" ]]; then
